@@ -5,7 +5,7 @@ from app.services import user_service
 
 router = APIRouter(prefix="/users", tags=["User"])
 
-@router.get("/users")
+@router.get("")
 def get_users():
     return {"users": user_service.get_all_users()}
 
